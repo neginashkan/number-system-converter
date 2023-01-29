@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Number System Converter</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row d-flex">
+        <div class="col-sm-12 col-m-12 col-lg-12 style-bg">
+          <h1><span>Number System</span></h1>
+          <h2>unit converter</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 col-m-12 col-lg-12 mb-3 error" id="massage-error"></div>
+      </div>
+      <div class="row">
+        <form>
+        <div class="mb-3 text-center col-sm-12 col-m-12 col-lg-12">
+            <input type="text" id="input-number-el" class="text-input" onfocus="clearErrorMassage() , clearValuesText()"/>
+            <select id="values"  class="drop-down-input round">
+              <option value="Decimal">Decimal</option>
+              <option value="Binary">Binary</option>
+              <option value="Octal">Octal</option>
+              <option value="Hexadecimal">Hexadecimal</option>
+            </select>
+          </div>
+          <div class="mb-5 text-center col-sm-12 col-m-12 col-lg-12"><input id="convert-button" class="button-style" type="submit" value="convert"/></div>
+          </form>
+      </div>
+      <div class="row  mb-3 text-center">
+        <div class="col-3 style-values values">Decimal</div>
+        <div class="col-3 style-values values">Binary</div>
+        <div class="col-3 style-values values">Octal</div>
+        <div class="col-3 style-values values">Hexadecimal</div>
+      </div>
+      <div class="row mb-5 text-center gx-0">
+        <div class="col-3 style-answers answers" id="decimal-el">?</div>
+        <div class="col-3 style-answers answers" id="binary-el">?</div>
+        <div class="col-3 style-answers answers" id="octal-el">?</div>
+        <div class="col-3 style-answers answers" id="hexadecimal-el">?</div>
+      </div>
+      <div class="row text-end mt-5">
+        <div class="col-12 w-100"><img  src="images/bread vector.png" alt="bread icon cute"></div>
+      </div>
+    </div>
+    <script src="javaScript/index.js"></script>
+  </body>
+</html>
